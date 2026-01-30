@@ -1,6 +1,6 @@
 #--------------------------
 '''
-    A kereses_a_listable nevű függvény.
+    A kereses_a_listablan nevű függvény.
     Első bemeneti paraméter egy lista,
     második bemeneti paraméter egy szám.
     A visszatérési érték a paraméterként megadott szám
@@ -9,12 +9,12 @@
     A visszatérési érték None, ha a szám nics benne a listában.
 '''
 def kereses_a_listaban(lista, szam):
-    lis = 0
-    for i in lista:
-        if i == szam:
-            return lis
-        lis += 1
-    return None
+    pozic = 0       # Ez számolja, hogy hányadik elemnél járunk
+    for i in lista:     # A lista elemeit egyesével megnézzük
+        if i == szam:       # Megnézükk, hogy egyezik e a keresett számmal
+            return pozic        # Ha igen, akkor visszadjuk az elem helyét
+        pozic += 1      # Ha nem egyezik akkor lépünk, a következő elemre
+    return None     # Ha a szám nincs a listában
 
 
 #--------------------------
