@@ -38,10 +38,10 @@ def kereses_a_listaban(lista, szam):
     A visszatérési érték False, ha  a betü nics benne a stringben.
 '''
 def benne_van_a_stringben(string, betu):
-    for i in string:
-        if i == betu:
-            return True
-    return False
+    for i in string:        # A lista elemeit sorban megnézzük
+        if i == betu:       # Ha az i megegyezik a keresett számmal
+            return True     # Igaz, mert a szám benne van a listában
+    return False        # Hamis, mert  a szám nincs benne a listában
 
 
 #--------------------------
