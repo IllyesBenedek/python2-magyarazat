@@ -53,11 +53,11 @@ def benne_van_a_stringben(string, betu):
     Üres lista esetén 0 a visszatérési érték.
 '''
 def pozitivok_szama(pozitivok):
-    poz = 0
-    for i in pozitivok:
-        if i > 0:
-            poz += 1
-    return poz
+    poz = 0     # Ez számolja hogy hány pozitív szám van
+    for i in pozitivok:     # Végig megyünk a lista minden elemén
+        if i > 0:       # Megnézzük hogy a szám pozitív-e
+            poz += 1        # Ha igen, akkor növeljük a számlálót
+    return poz      # Vissza adjuk a pozitív számok számát
 
 
 #--------------------------
