@@ -80,11 +80,11 @@ def pozitivok_szama(pozitivok):
         páratlan számait tartalmazza.
 '''
 def paratlanok_kivalogatasa(lista):
-    par = []
+    paratlan = []
     for i in lista:
         if i % 2 != 0:
-            par.append(i)
-    return par
+            paratlan.append(i)
+    return paratlan
 
 #--------------------------
 ''' 
