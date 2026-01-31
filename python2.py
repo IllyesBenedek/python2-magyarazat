@@ -124,11 +124,11 @@ def negativok_szama(negativok):
     Üres lista esetén 0 a visszatérési érték.
 '''
 def parosok_szama(parosok):
-    par = 0
-    for i in parosok:
-        if i % 2 == 0:
-            par += 1
-    return par
+    par = 0     # Ez számolja a páros számokat
+    for i in parosok:       # Végigmegyünk a lista minden elemén
+        if i % 2 == 0:      # Megnézzük, hogy a szám páros-e
+            par += 1        # Ha igen, növeljük a számlálót
+    return par      # Visszadjuk a páros számok számát
 
 #--------------------------
 ''' 
