@@ -162,7 +162,10 @@ def utolso_karakter(string):
     paraméterként egy számokat tartalmazó listát kap és
     visszatér a lista számainak átlagával.
 '''
-
+def lista_atlag(szam):
+    if szam == []:
+        return 0
+    return osszeg(szam) / len(szam)
 
 
 #--------------------------
@@ -267,6 +270,14 @@ def szorzat(szorzat):
     A faktorialis nevű függvény,
     visszatér a paraméterként megkapott szám faktoriálisával.
 '''
+def faktorialis(n):
+    if n < 0:
+        return None
+    eredmeny = 1
+    for i in range(1, n + 1):
+        eredmeny *= i
+    return eredmeny
+
 
 
 
