@@ -95,9 +95,9 @@ def paratlanok_kivalogatasa(lista):
     Üres string esetén None a visszatérési érték.
 '''
 def elso_karakter(string):
-    if string == "":
-        return None
-    return string[0]
+    if string == "":        # Megnézzük, hogy a string üres-e
+        return None     # Ha üres, akkor nincs első karakter
+    return string[0]        # H nemüres, visszadjuk a szöveg első karakterét
 
 
 #--------------------------
