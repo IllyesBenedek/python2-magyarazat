@@ -139,10 +139,10 @@ def parosok_szama(parosok):
     A feladat megoldása során nem használhatod a sum() függvényt!
 '''
 def osszeg(osszeg):
-    ossz = 0
-    for i in osszeg:
-        ossz += i
-    return ossz
+    ossz = 0        # Ebben gyűjtjük a számok összegét
+    for i in osszeg:        # Végigmegyünk a lista minden elemén
+        ossz += i       # Hozzáadjuk az aktuális számot
+    return ossz     # Visszadjuk az összes szám összegét
 
 #--------------------------
 ''' 
