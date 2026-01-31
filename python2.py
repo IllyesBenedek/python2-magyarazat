@@ -109,11 +109,11 @@ def elso_karakter(string):
     Üres lista esetén 0 a visszatérési érték.
 '''
 def negativok_szama(negativok):
-    neg = 0
-    for i in negativok:
-        if i < 0:
-            neg += 1
-    return neg
+    neg = 0     # Ez számolja a negatív számokat
+    for i in negativok:     # Végig megyünk a lista minden elemén
+        if i < 0:       # Megnézzük hogy a szám negatív-e
+            neg += 1        # Ha igen, növeljük a számlálót
+    return neg      # Visszaadjuk a negatív számok számát
 
 
 #--------------------------
