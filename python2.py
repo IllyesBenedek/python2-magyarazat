@@ -163,9 +163,9 @@ def utolso_karakter(string):
     visszatér a lista számainak átlagával.
 '''
 def lista_atlag(lista):
-    if lista == []:
-        return 0
-    return sum(lista) / len(lista)
+    if lista == []:     # Ha a lista üres
+        return 0        # Nincs átlag, 0-t adunk vissza
+    return sum(lista) / len(lista)      # Átlag = Összeg / elemszám
 
 #--------------------------
 '''
