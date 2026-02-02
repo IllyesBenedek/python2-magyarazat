@@ -94,10 +94,10 @@ def paratlanok_kivalogatasa(lista):
     
     Üres string esetén None a visszatérési érték.
 '''
-def elso_karakter(string):
-    if string == "":        # Megnézzük, hogy a string üres-e
+def elso_karakter(szoveg):
+    if szoveg == "":        # Megnézzük, hogy a string üres-e
         return None     # Ha üres, akkor nincs első karakter
-    return string[0]        # H nemüres, visszadjuk a szöveg első karakterét
+    return szoveg[0]        # H nemüres, visszadjuk a szöveg első karakterét
 
 
 #--------------------------
@@ -153,15 +153,19 @@ def osszeg(osszeg):
     Üres string esetén None a visszatérési érték.
 '''
 def utolso_karakter(string):
-    if string == "":
-        return None
-    return string[-1]
+    if string == "":        # Ha a string üre
+        return None     # Nincs utolsó karakter
+    return string[-1]       # Visszadjuk az utolsó karaktert
 #--------------------------
 ''' 
     A lista_atlag nevű függvény,
     paraméterként egy számokat tartalmazó listát kap és
     visszatér a lista számainak átlagával.
 '''
+def lista_atlag(lista):
+    if lista == []:
+        return 0
+    return sum(lista) / len(lista)
 
 #--------------------------
 '''
