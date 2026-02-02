@@ -208,11 +208,11 @@ def pozitivok_kivalogatasa(pozitiv):
     A visszatérési érték None, ha a betü nics benne a stringben.
 '''
 def kereses_a_stringben(string, betü):
-    str = 0
+    stringe = 0
     for i in string:
         if i == betü:
-            return str
-        str += 1
+            return stringe
+        stringe += 1
     return None
 
 
