@@ -26,8 +26,15 @@ def kereses_a_listaban(lista, szam):
     
     A feladat megoldása során nem használhatod a min() függvényt!
 '''
-
-
+def legkisebb(lista):
+    if lista == []:
+        return None
+    
+    legk = lista[0]
+    for i in lista:
+        if i < legk:
+            legk = i
+    return legk
 
 #--------------------------
 '''
@@ -69,7 +76,15 @@ def pozitivok_szama(pozitivok):
 
     A feladat megoldása során nem használhatod a max függvényt!
 '''
-
+def legnagyobb(lista):
+    if lista == []:
+        return None
+    
+    legn = lista[0]
+    for i in lista:
+        if i > legn:
+            legn = i
+    return legn
 
 
 #--------------------------
