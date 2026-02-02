@@ -175,11 +175,11 @@ def lista_atlag(lista):
         páros számait tartalmazza.
 '''
 def parosok_kivalogatasa(lista):
-    par = []
-    for i in lista:
-        if i % 2 == 0:
-            par.append(i)
-    return par
+    par = []        # Ebbe teszük a páros számokat
+    for i in lista:     # Végig megyünk a lista minden elemén
+        if i % 2 == 0:      # Ha a szám páros
+            par.append(i)       # Hozzáadjuk a páros listához
+    return par      # Visszadjuk a páros számokat
 
 
 #--------------------------
@@ -190,11 +190,11 @@ def parosok_kivalogatasa(lista):
         pozitiv számait tartalmazza. 
 '''
 def pozitivok_kivalogatasa(pozitiv):
-    poz = []
-    for i in pozitiv:
-        if i > 0:
-            poz.append(i)
-    return poz
+    poz = []        # Ebbe tesszük a pozitív számokat
+    for i in pozitiv:       # Végigmegyünk a lista minden elemén
+        if i > 0:       # Ha a szám pozitív
+            poz.append(i)       # Hozzáadjuk a listához
+    return poz      # Visszadjuk a pozítív számokat
 
 
 #--------------------------
